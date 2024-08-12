@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_anggota">
+
+
+    <TextView
+        android:id="@+id/judul_formAnggota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORM\nDAFTAR ANGGOTA"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/label_namaDepan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul_formAnggota"
+        android:inputType="textPersonName"
+        android:layout_marginTop="70dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Nama Depan :"/>
+
+    <EditText
+        android:id="@+id/input_namaDepan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/judul_formAnggota"
+        android:layout_toRightOf="@id/label_namaDepan"/>
+
+    <TextView
+        android:id="@+id/label_namaBelakang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_namaDepan"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Nama Belakang :"/>
+
+    <EditText
+        android:id="@+id/input_namaBelakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/label_namaDepan"
+        android:layout_toRightOf="@id/label_namaBelakang"/>
+
+    <TextView
+        android:id="@+id/label_kota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_namaBelakang"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Kota :"/>
+
+    <EditText
+        android:id="@+id/input_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/label_namaBelakang"
+        android:layout_toRightOf="@id/label_kota"/>
+
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_kota"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Jenis Kelamin :"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/label_gender"
+        android:layout_below="@id/label_kota"
+        >
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio_pria"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Pria"
+                android:textSize="13dp" />
+
+            <RadioButton
+                android:id="@+id/radio_wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Wanita"
+                android:textSize="13dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label_telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_gender"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="No Telepon :"/>
+
+    <EditText
+        android:id="@+id/input_telp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:textSize="15dp"
+        android:maxLength="13"
+        android:layout_below="@+id/label_gender"
+        android:layout_toRightOf="@id/label_telp"/>
+
+    <Button
+        android:id="@+id/button_submitDaftar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:layout_below="@id/input_telp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-130dp"
+        android:backgroundTint="#262A56"
+        android:layout_toRightOf="@id/input_telp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main_menu">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/judul_aplikasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PERPUSTAKAAN\nBERSAMA"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_donasi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#262A56"
+        android:text="Donasi Buku"/>
+
+
+    <Button
+        android:id="@+id/button_daftar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#262A56"
+        android:text="Daftar Anggota"/>
+
+    <Button
+        android:id="@+id/button_peminjaman"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#262A56"
+        android:text="Peminjaman"/>
+
+    <Button
+        android:id="@+id/button_pengembalian"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#262A56"
+        android:text="Pengembalian"/>
+
+</LinearLayout>
